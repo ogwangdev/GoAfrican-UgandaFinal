@@ -1,0 +1,7 @@
+<resources>
+
+    <color name="black_overlay">#96111111</color>
+    <color name="colorPrimaryDark">#ff18b4ff</color>
+    <color name="colorPrimary">#f1df461f</color>
+    <color name="accent">#96c0c6c2</color>
+</resources>

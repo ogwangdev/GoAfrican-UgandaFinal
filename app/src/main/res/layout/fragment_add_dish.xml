@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardElevation="7.5sp"
+        card_view:cardBackgroundColor="#ff0ea1fe"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:contentDescription="Dish"
+                android:src="@drawable/food"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#ff0ea1fe">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="Thank You for your choice to add an African Traditional Dish. Please go ahead and fill this form below. Thank you in advance."
+            android:id="@+id/textView"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="5dp"
+            android:typeface="normal" />
+
+        <TextView android:text="Dish Name" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:capitalize="none"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+        <EditText android:id="@+id/eTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="#d9090409"
+            android:layout_marginBottom="10dp"
+            android:hint="Type the dish name(eg. Boo)"
+            android:layout_weight="0.13" />
+
+        <TextView android:text="Description" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+        <EditText android:id="@+id/eDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:singleLine="true"
+            android:gravity="top"
+            android:textColor="#d9090409"
+            android:inputType="textMultiLine"
+            android:hint="Give a short description " />
+
+        <TextView android:text="Ingredients" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+        <EditText android:id="@+id/eIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:singleLine="true"
+            android:gravity="top"
+            android:hint="Ingredients required"
+            android:textColor="#d9090409"/>
+
+        <TextView android:text="Steps" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffffff"
+            android:textSize="22dp" />
+        <EditText android:id="@+id/eSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:singleLine="true"
+            android:gravity="top"
+            android:hint="Steps to follow(Be precise)"
+            android:textColor="#d9090409"/>
+
+
+            <Button android:id="@+id/save_btn"
+                android:text="Submit"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="#fffbfff6"
+                android:clickable="true" />
+
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    </ScrollView>
+
+
